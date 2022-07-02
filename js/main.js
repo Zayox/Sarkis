@@ -11,7 +11,7 @@ function leftCarroussel(){
 
   document.getElementById("art1").style.left = parseInt(leftArt1)-130 + "vw";
   document.getElementById("art2").style.left = parseInt(leftArt2)-85 + "vw";
-  document.getElementById("art3").style.left = parseInt(leftArt3)-130 + "vw";
+  document.getElementById("art3").style.left = parseInt(leftArt3)-65 + "vw";
 
   document.getElementById("art2").style.transitionDuration = 2.5 + "s";
 
@@ -28,7 +28,7 @@ function rightCarroussel(){
 
   document.getElementById("art1").style.left = parseInt(leftArt1)+130 + "vw";
   document.getElementById("art2").style.left = parseInt(leftArt2)+85 + "vw";
-  document.getElementById("art3").style.left = parseInt(leftArt3)+130 + "vw";
+  document.getElementById("art3").style.left = parseInt(leftArt3)+65 + "vw";
 
   document.getElementById("art2").style.transitionDuration = 1.5 + "s";
   count++;
