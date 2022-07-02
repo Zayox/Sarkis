@@ -1,0 +1,111 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+p{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#rechercher{
+  margin-top: 12px;
+  padding:15px;
+  height: 30px;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  background: url(../img/search-icon.png);
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: inputMoving;
+  animation-delay: 0.5s;
+  outline : 0;
+}
+
+
+
+#sarkisImg{
+  left: 100vw;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: imgMoving;
+}
+
+#titreSarkis{
+  opacity: 0;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: titleMoving;
+  animation-delay: 0.5s;
+}
+
+#text1{
+  opacity: 0;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: text1Moving;
+  animation-delay: 0.5s;
+}
+
+#text2{
+  opacity: 0;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: text2Moving;
+  animation-delay: 0.5s;
+}
+
+
+#lang{
+  opacity: 0;
+  animation-name: langMoving;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes imgMoving {
+  0%{left: 100vw}
+  100%{left: 38vw}
+}
+
+@keyframes titleMoving {
+  0%{opacity: 0; margin-top: 12rem;}
+  100%{opacity: 100; margin-top: 8rem;}
+}
+
+@keyframes inputMoving {
+  0%{opacity: 0; margin-top: 8rem;}
+  100%{opacity: 100; margin-top: 4rem;}
+}
+
+@keyframes text1Moving {
+  0%{opacity: 0; margin-top: 13rem;}
+  100%{opacity: 100; margin-top: 9rem;}
+}
+
+@keyframes text2Moving {
+  0%{opacity: 0; margin-top: 9rem;}
+  100%{opacity: 100; margin-top: 5rem;}
+}
+
+@keyframes langMoving {
+  0%{opacity: 0; top: -5rem;}
+  100%{opacity: 100; top: 2.5rem;}
+}
+
+#art1, #art2, #art3{
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.2,0.5,0.3,1);
+}
+
+

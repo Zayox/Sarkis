@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sarkis</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="overflow-x-hidden">
+
+
+
+<div class="flex">
+  <div class="h-[100vh] w-[38vw]">
+    <div class="relative top-10 left-[80%]" id="lang">
+      <div class="flex">
+        <p class="font-bold">FR</p>
+        <p class="font-light ml-4">EN</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center h-[70vh]">
+      <h1 class="text-[110px]" id="titreSarkis">Sarkis</h1>
+      <div class="mt-16 w-72 h-8 pb-6">
+        <input type="text" id="rechercher" placeholder="Rechercher" class="w-72">
+      </div>
+      <p class="mt-26 border border-black p-4 w-72" id="text1">Exposition depuis 1960</p>
+      <p class="mt-20 border border-black p-4 w-72" id="text2">Textes critiques</p>
+    </div>
+  </div>
+
+  <div>
+    <img src="./img/sarkis_accueil.jpg" alt="sarkis-accueil" class="absolute h-full left-[100vw]" id="sarkisImg" >
+  </div>
+</div>
+
+
+<div class="flex justify-center">
+  <div class="w-[45vw] mt-20">
+    <div class="flex flex-col items-center">
+      <h1 class="text-5xl">Dernières expositions</h1>
+    </div>
+    <h3 class="text-slate-300 text-3xl font-bold mt-32 ml-[78%] pb-2">2022</h3>
+    <div class="h-[2px] w-[81%] ml-12 bg-slate-300"></div>
+    <div class="mt-24 ml-[27%]">
+      <img src="./img/sarkis_7j.jpg" alt="sarkisFirstArt">
+      <h2 class="mt-4 text-3xl">7 Jours 7 Nuits</h2>
+      <p class="mt-1">Galerie Obadia, Paris • 16 juin - 19 juil. 2022</p>
+    </div>
+    <h3 class="text-slate-300 text-3xl font-bold mt-16 ml-[78%] pb-2">2021</h3>
+    <div class="h-[2px] w-[81%] ml-12 bg-slate-300"></div>
+    <div class="flex flex-col">
+      <div class="ml-40">
+        <h1 class="text-xl mt-12">Au commencement la chaleur</h1>
+        <p class="mt-2">Galerie Obadia, Paris • 2 nov. - 4 avr. 2022</p>
+        <div class="h-[2px] w-[86%] bg-slate-300"></div>
+
+        <h1 class="text-xl mt-12">Gr2021</h1>
+        <p class="mt-2">Abbaye de Fontdouce, Bruxelles • 7 avr. - 31 mai</p>
+        <div class="h-[2px] w-[86%] bg-slate-300"></div>
+
+        <h1 class="text-xl mt-12">ICONS</h1>
+        <p class="mt-2">Fondation Boghossian, Bruxelles • 6 mai - 24 oct.</p>
+        <div class="h-[2px] w-[86%] bg-slate-300"></div>
+
+        <h1 class="text-xl mt-12">EX AFRICA</h1>
+        <p class="mt-2">Musée du Quai Branly, Paris • 11 fév.. - juin</p>
+        <div class="h-[2px] w-[86%] bg-slate-300"></div>
+
+        <h1 class="text-xl mt-12">ODORE</h1>
+        <p class="mt-2">Galerie Pauline Pavec, Paris • 13 jan. - 20 fév.</p>
+        <div class="h-[2px] w-[86%] bg-slate-300"></div>
+      </div>
+    </div>
+    <h3 class="text-slate-300 text-3xl font-bold mt-16 ml-[78%] pb-2">2020</h3>
+    <div class="h-[2px] w-[81%] ml-12 bg-slate-300"></div>
+  </div>
+</div>
+
+<div class="bg-[#f0f0f0] h-[170vh]">
+  <div class="flex justify-center mt-20">
+    <div class="w-[800px] h-20 flex items-center">
+      <h1 class="text-3xl">Textes critiques</h1>
+      <div class="flex">
+        <p class="text-xl ml-24 hover:cursor-pointer" onclick="leftCarroussel()"><</p>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round1"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full bg-black" id="round2"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round3"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round4"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round5"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round6"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round7"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round8"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round9"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round10"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round11"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round12"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round13"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round14"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round15"></div>
+        <div class="mt-[1.5%] ml-2 h-4 w-4 rounded-full border border-black" id="round16"></div>
+        <p class="text-xl ml-2 hover:cursor-pointer" onclick="rightCarroussel()">></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute right-0 ml-auto mr-auto w-[60vw] mt-20" id="art1" style="left:0;">
+    <div class="bg-white shadow-md-400 h-full w-[60vw] p-6">
+        <p>Auteurs multiples • 2015</p>
+        <h1 class="mt-4 text-3xl">Respiro</h1>
+         <p class="mt-2">Éditée dans le cadre de la Biennale de Venise 2015, Pavillon de la Turquie</p>
+          <img src="./img/sarkis_accueil.jpg" alt="sarkisImage" class="mt-4">
+    </div>
+    <p class="absolute left-[82%] top-12 border-2 border-black py-4 px-10 font-bold hover:bg-black hover:text-white hover:cursor-pointer">Lire</p>
+  </div>
+
+
+  <div class="absolute right-0 ml-auto mr-auto w-[60vw] mt-20" id="art2" style="left:85vw">
+    <div class="bg-white shadow-md-400 h-full w-[60vw] p-6">
+      <p>Elvan Zabunyan • 2011</p>
+      <h1 class="mt-4 text-3xl">De lui à nous</h1>
+      <p class="mt-2">Éditée dans le cadre de la Biennale de Venise 2015, Pavillon de la Turquie</p>
+      <img src="./img/sarkis_accueil.jpg" alt="sarkisImage" class="mt-4">
+    </div>
+    <p class="absolute left-[82%] top-12 border-2 border-black py-4 px-10 font-bold hover:bg-black hover:text-white hover:cursor-pointer">Lire</p>
+  </div>
+
+
+  <div class="absolute right-0 ml-auto mr-auto w-[60vw] mt-20" id="art3" style="left:-130vw">
+    <div class="bg-white shadow-md-400 h-full w-[60vw] p-6">
+      <p>Elvan Zabunyan • 2011</p>
+      <h1 class="mt-4 text-3xl">De lui à nous</h1>
+      <p class="mt-2">Éditée dans le cadre de la Biennale de Venise 2015, Pavillon de la Turquie</p>
+      <img src="./img/sarkis_accueil.jpg" alt="sarkisImage" class="mt-4">
+    </div>
+    <p class="absolute left-[82%] top-12 border-2 border-black py-4 px-10 font-bold hover:bg-black hover:text-white hover:cursor-pointer">Lire</p>
+  </div>
+
+  <div class="flex justify-center mt-[100vh]">
+    <div class="mt-32 border-2 border-black py-8 px-10 w-72 h-12 flex items-center">
+      <p class="text-center absolute font-extrabold">Tous les textes critiques <span class="text-2xl ml-8 -mt-[5px] absolute font-bold">></span>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
